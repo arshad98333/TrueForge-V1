@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Roaming Resolver system architecture</title>
+  <desc id="desc">The operator console sends a selected synthetic Linear ticket to TrueForge. TrueForge uses Azure OpenAI with an optional OpenAI fallback, scoped MCP tools for Linear and MongoDB Atlas, and native execution in E2B. Human approval protects the final Linear comment.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#171714" flood-opacity="0.12"/></filter>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff5d8f"/><stop offset="1" stop-color="#7387ff"/></linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#3e3c38"/></marker>
+    <style>
+      .bg{fill:#f5f1e8}.panel{fill:#fffdf8;stroke:#171714;stroke-width:2}.soft{fill:#eee9df;stroke:#171714;stroke-width:1.5}.pink{fill:#ffd5e2}.blue{fill:#dce1ff}.mint{fill:#d7f1e7}.yellow{fill:#fff2a9}.orange{fill:#ffe1bd}.lav{fill:#eadfff}.ink{fill:#171714}.muted{fill:#6f6d66}.line{fill:none;stroke:#3e3c38;stroke-width:3;marker-end:url(#arrow)}.line2{fill:none;stroke:#3e3c38;stroke-width:2.5}.title{font:700 38px Inter,Arial,sans-serif;letter-spacing:-1px}.subtitle{font:400 18px Inter,Arial,sans-serif}.h{font:700 21px Inter,Arial,sans-serif}.label{font:700 15px Inter,Arial,sans-serif}.body{font:400 14px Inter,Arial,sans-serif}.small{font:600 12px Inter,Arial,sans-serif;letter-spacing:.6px}.white{fill:#fff}.center{text-anchor:middle}.badge{fill:#171714}.badgeText{font:700 12px Inter,Arial,sans-serif;fill:#fff;letter-spacing:.8px}.mono{font:600 12px Consolas,monospace}.icon{font:700 20px Inter,Arial,sans-serif}.step{fill:#fffdf8;stroke:#171714;stroke-width:1.5}
+    </style>
+  </defs>
+  <rect class="bg" width="1600" height="900"/>
+  <text class="title ink" x="70" y="70">Roaming Resolver system architecture</text>
+  <text class="subtitle muted" x="70" y="102">Synthetic telecom investigation with proof before impact</text>
+
+  <g filter="url(#shadow)">
+    <rect class="panel" x="70" y="205" rx="18" width="300" height="430"/>
+    <rect class="pink" x="70" y="205" rx="18" width="300" height="70"/>
+    <path d="M70 257h300" stroke="#171714" stroke-width="2"/>
+    <text class="h ink center" x="220" y="248">User interface</text>
+    <rect class="soft" x="100" y="302" rx="12" width="240" height="76"/>
+    <text class="label ink" x="126" y="332">Operator Console</text><text class="body muted" x="126" y="355">Live proof and run status</text>
+    <rect class="soft" x="100" y="397" rx="12" width="240" height="76"/>
+    <text class="label ink" x="126" y="427">Linear ticket queue</text><text class="body muted" x="126" y="450">Show all open tickets</text>
+    <rect class="soft" x="100" y="492" rx="12" width="240" height="104"/>
+    <text class="label ink" x="126" y="522">Random case generator</text><text class="body muted" x="126" y="547">Synthetic evidence only</text><text class="body muted" x="126" y="570">Create ticket and run</text>
+  </g>
+
+  <path class="line" d="M370 420 H458"/>
+  <g filter="url(#shadow)">
+    <rect x="470" y="180" width="132" height="500" rx="66" fill="#171714"/>
+    <rect x="480" y="168" width="132" height="500" rx="66" fill="url(#core)"/>
+    <circle cx="546" cy="360" r="38" fill="#fffdf8"/>
+    <path d="M525 348l21-12 21 12v24l-21 12-21-12z" fill="#7387ff"/><path d="M535 354l11-6 11 6v12l-11 6-11-6z" fill="#fff"/>
+    <text class="h white center" x="546" y="434">TrueForge</text><text class="body white center" x="546" y="458">Agent harness</text>
+  </g>
+
+  <path class="line2" d="M612 305 H665 Q690 305 690 280 V235"/><path class="line" d="M690 235 H738"/>
+  <g filter="url(#shadow)">
+    <rect class="panel" x="750" y="135" rx="18" width="440" height="230"/>
+    <text class="h ink center" x="970" y="175">Model route</text>
+    <rect class="blue" x="785" y="200" rx="12" width="170" height="105" stroke="#171714" stroke-width="1.5"/>
+    <text class="small ink" x="807" y="229">PRIMARY</text><text class="label ink" x="807" y="258">Azure OpenAI</text><text class="body muted" x="807" y="284">Azure deployment</text>
+    <path class="line" d="M955 252 H1002"/>
+    <rect class="lav" x="1015" y="200" rx="12" width="140" height="105" stroke="#171714" stroke-width="1.5"/>
+    <text class="small ink" x="1037" y="229">FALLBACK</text><text class="label ink" x="1037" y="258">OpenAI</text><text class="body muted" x="1037" y="284">Optional</text>
+    <rect class="badge" x="850" y="322" rx="12" width="240" height="25"/><text class="badgeText center" x="970" y="339">RESPONSES API COMPATIBLE</text>
+  </g>
+
+  <path class="line2" d="M612 515 H665 Q690 515 690 540 V585"/><path class="line" d="M690 585 H738"/>
+  <g filter="url(#shadow)">
+    <rect class="panel" x="750" y="405" rx="18" width="440" height="365"/>
+    <text class="h ink center" x="970" y="447">Scoped MCP tools</text>
+    <rect class="pink" x="782" y="475" rx="9" width="182" height="48"/><text class="mono ink center" x="873" y="505">read_issue</text>
+    <rect class="orange" x="976" y="475" rx="9" width="182" height="48"/><text class="mono ink center" x="1067" y="505">read_evidence</text>
+    <rect class="blue" x="782" y="538" rx="9" width="182" height="48"/><text class="mono ink center" x="873" y="568">prepare_execution</text>
+    <rect class="yellow" x="976" y="538" rx="9" width="182" height="48"/><text class="mono ink center" x="1067" y="568">prepare_review</text>
+    <rect class="mint" x="782" y="601" rx="9" width="182" height="70"/><text class="mono ink center" x="873" y="632">post_correction</text><text class="small muted center" x="873" y="653">Approval required</text>
+    <rect class="lav" x="976" y="601" rx="9" width="182" height="70"/><text class="mono ink center" x="1067" y="632">approve_reply_draft</text><text class="small muted center" x="1067" y="653">Approval required</text>
+    <rect class="badge" x="842" y="704" rx="13" width="256" height="28"/><text class="badgeText center" x="970" y="723">AUTHENTICATED AND BOUNDED</text>
+  </g>
+
+  <path class="line" d="M1190 500 H1260"/><path class="line" d="M1190 585 H1260"/><path class="line" d="M1190 670 H1260"/>
+  <g filter="url(#shadow)">
+    <rect class="panel" x="1275" y="425" rx="18" width="255" height="330"/>
+    <text class="h ink center" x="1402" y="466">Connected systems</text>
+    <rect class="pink" x="1305" y="492" rx="10" width="195" height="60"/><text class="label ink center" x="1402" y="520">Linear</text><text class="small muted center" x="1402" y="540">Tickets and comments</text>
+    <rect class="orange" x="1305" y="574" rx="10" width="195" height="60"/><text class="label ink center" x="1402" y="602">MongoDB Atlas</text><text class="small muted center" x="1402" y="622">Scoped evidence</text>
+    <rect class="blue" x="1305" y="656" rx="10" width="195" height="60"/><text class="label ink center" x="1402" y="684">E2B sandbox</text><text class="small muted center" x="1402" y="704">One native exec</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect class="ink" x="70" y="790" rx="15" width="1460" height="65"/>
+    <text class="label white" x="100" y="817">Impact boundary</text><text class="body white" x="100" y="840">Human approval before the Linear correction. No refund. No billing change. No customer message.</text>
+    <rect x="1275" y="807" rx="13" width="225" height="31" fill="#f5d547"/><text class="small ink center" x="1387" y="827">PROOF BEFORE IMPACT</text>
+  </g>
+</svg>

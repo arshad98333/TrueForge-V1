@@ -1,0 +1,13 @@
+{
+  "name": "roaming-charge-resolver-runtime",
+  "private": true,
+  "scripts": {
+    "trueforge": "node scripts/run_trueforge.mjs",
+    "test": "node --test tests/e2b-provider.test.mjs",
+    "probe:e2b": "node scripts/probe_e2b.mjs"
+  },
+  "dependencies": {
+    "@truefoundry/trueforge": "0.2.1",
+    "e2b": "2.51.0"
+  }
+}

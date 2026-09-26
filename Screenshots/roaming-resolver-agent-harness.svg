@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Roaming Resolver agent harness and safety controls</title>
+  <desc id="desc">Inputs flow into the TrueForge agent harness. The harness enforces scope, executes one calculation in E2B, records evidence, and pauses before the approved Linear correction. The operator console displays each proof point.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#171714" flood-opacity="0.11"/></filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#3e3c38"/></marker>
+    <style>
+      .bg{fill:#f5f1e8}.panel{fill:#fffdf8;stroke:#171714;stroke-width:2}.head{fill:#171714}.pink{fill:#ffd5e2}.blue{fill:#dce1ff}.mint{fill:#d7f1e7}.yellow{fill:#fff2a9}.orange{fill:#ffe1bd}.lav{fill:#eadfff}.ink{fill:#171714}.white{fill:#fff}.muted{fill:#6f6d66}.line{fill:none;stroke:#3e3c38;stroke-width:3;marker-end:url(#arrow)}.title{font:700 38px Inter,Arial,sans-serif;letter-spacing:-1px}.subtitle{font:400 18px Inter,Arial,sans-serif}.h{font:700 21px Inter,Arial,sans-serif}.section{font:700 15px Inter,Arial,sans-serif;letter-spacing:.8px}.label{font:700 14px Inter,Arial,sans-serif}.body{font:400 13px Inter,Arial,sans-serif}.small{font:600 11px Inter,Arial,sans-serif;letter-spacing:.5px}.center{text-anchor:middle}.stepNo{font:700 16px Inter,Arial,sans-serif}.mono{font:600 11px Consolas,monospace}
+    </style>
+  </defs>
+  <rect class="bg" width="1600" height="900"/>
+  <text class="title ink" x="70" y="65">TrueForge agent harness for the Roaming Resolver</text>
+  <text class="subtitle muted" x="70" y="97">A complete audit trail from ticket selection to human controlled action</text>
+
+  <g filter="url(#shadow)">
+    <rect class="panel" x="65" y="160" rx="17" width="280" height="530"/>
+    <rect class="head" x="65" y="160" rx="17" width="280" height="64"/><path d="M65 208h280" stroke="#171714" stroke-width="2"/>
+    <text class="h white center" x="205" y="199">Inputs</text>
+    <rect class="blue" x="94" y="250" rx="11" width="222" height="102" stroke="#171714" stroke-width="1.5"/>
+    <text class="section ink center" x="205" y="280">MODEL ROUTE</text><text class="label ink center" x="205" y="310">Azure OpenAI</text><text class="body muted center" x="205" y="334">OpenAI fallback enabled</text>
+    <rect class="pink" x="94" y="376" rx="11" width="222" height="112" stroke="#171714" stroke-width="1.5"/>
+    <text class="section ink center" x="205" y="406">AGENT INSTRUCTIONS</text><text class="label ink center" x="205" y="436">One synthetic ticket</text><text class="body muted center" x="205" y="461">Evidence first. No assumptions.</text>
+    <rect class="orange" x="94" y="512" rx="11" width="222" height="140" stroke="#171714" stroke-width="1.5"/>
+    <text class="section ink center" x="205" y="542">TOOLS</text><text class="label ink center" x="205" y="572">Linear and Atlas MCP</text><text class="label ink center" x="205" y="600">E2B native execution</text><text class="body muted center" x="205" y="628">Six scoped operations</text>
+  </g>
+
+  <path class="line" d="M345 425 H405"/>
+  <g filter="url(#shadow)">
+    <rect class="panel" x="420" y="125" rx="20" width="790" height="610"/>
+    <rect class="head" x="420" y="125" rx="20" width="790" height="85"/>
+    <text class="h white center" x="815" y="162">TRUEFORGE</text><text class="body white center" x="815" y="186">Open source agent harness</text>
+
+    <rect class="pink" x="450" y="242" rx="12" width="225" height="450" stroke="#171714" stroke-width="1.5"/>
+    <text class="section ink center" x="562" y="277">CONTEXT AND POLICY</text>
+    <rect class="panel" x="472" y="302" rx="9" width="181" height="72"/><text class="label ink center" x="562" y="330">Immutable scope</text><text class="small muted center" x="562" y="353">Issue and team binding</text>
+    <rect class="panel" x="472" y="391" rx="9" width="181" height="72"/><text class="label ink center" x="562" y="419">Untrusted ticket text</text><text class="small muted center" x="562" y="442">Never treated as instructions</text>
+    <rect class="panel" x="472" y="480" rx="9" width="181" height="72"/><text class="label ink center" x="562" y="508">Bounded evidence</text><text class="small muted center" x="562" y="531">Maximum 100 records</text>
+    <rect class="panel" x="472" y="569" rx="9" width="181" height="88"/><text class="label ink center" x="562" y="599">Evidence hash</text><text class="small muted center" x="562" y="622">Rechecked before action</text><text class="mono muted center" x="562" y="643">SHA-256</text>
+
+    <rect class="blue" x="690" y="242" rx="12" width="225" height="450" stroke="#171714" stroke-width="1.5"/>
+    <text class="section ink center" x="802" y="277">AGENT RUNTIME</text>
+    <rect class="panel" x="712" y="302" rx="9" width="181" height="72"/><text class="label ink center" x="802" y="330">Session trace</text><text class="small muted center" x="802" y="353">Turns and tool calls</text>
+    <rect class="panel" x="712" y="391" rx="9" width="181" height="72"/><text class="label ink center" x="802" y="419">E2B sandbox</text><text class="small muted center" x="802" y="442">Isolated execution</text>
+    <rect class="panel" x="712" y="480" rx="9" width="181" height="72"/><text class="label ink center" x="802" y="508">One exact command</text><text class="small muted center" x="802" y="531">20 second limit</text>
+    <rect class="panel" x="712" y="569" rx="9" width="181" height="88"/><text class="label ink center" x="802" y="599">Deterministic result</text><text class="small muted center" x="802" y="622">Billed vs expected</text><text class="small muted center" x="802" y="643">Stable evidence IDs</text>
+
+    <rect class="mint" x="930" y="242" rx="12" width="250" height="450" stroke="#171714" stroke-width="1.5"/>
+    <text class="section ink center" x="1055" y="277">RUN AND CONTROL</text>
+    <rect class="panel" x="952" y="302" rx="9" width="206" height="72"/><text class="label ink center" x="1055" y="330">Open ticket selection</text><text class="small muted center" x="1055" y="353">Eligible scope only</text>
+    <rect class="panel" x="952" y="391" rx="9" width="206" height="72"/><text class="label ink center" x="1055" y="419">Human approval</text><text class="small muted center" x="1055" y="442">Exact payload and target</text>
+    <rect class="panel" x="952" y="480" rx="9" width="206" height="72"/><text class="label ink center" x="1055" y="508">Idempotent action</text><text class="small muted center" x="1055" y="531">No duplicate comment</text>
+    <rect class="panel" x="952" y="569" rx="9" width="206" height="88"/><text class="label ink center" x="1055" y="599">Safe final state</text><text class="small muted center" x="1055" y="622">Correction controlled</text><text class="small muted center" x="1055" y="643">Customer reply held</text>
+  </g>
+
+  <path class="line" d="M1210 425 H1265"/>
+  <g filter="url(#shadow)">
+    <rect class="panel" x="1280" y="210" rx="18" width="255" height="430"/>
+    <rect class="yellow" x="1280" y="210" rx="18" width="255" height="70"/>
+    <path d="M1280 264h255" stroke="#171714" stroke-width="2"/>
+    <text class="h ink center" x="1407" y="251">Operator Console</text>
+    <rect class="panel" x="1310" y="307" rx="10" width="195" height="66"/><text class="label ink center" x="1407" y="336">Live workflow stages</text><text class="small muted center" x="1407" y="357">Six visible states</text>
+    <rect class="panel" x="1310" y="391" rx="10" width="195" height="66"/><text class="label ink center" x="1407" y="420">Decision record</text><text class="small muted center" x="1407" y="441">Amounts and evidence hash</text>
+    <rect class="panel" x="1310" y="475" rx="10" width="195" height="66"/><text class="label ink center" x="1407" y="504">Three proof cards</text><text class="small muted center" x="1407" y="525">Real. Executed. Controlled.</text>
+    <rect class="head" x="1310" y="559" rx="10" width="195" height="50"/><text class="label white center" x="1407" y="589">Awaiting correction</text>
+  </g>
+
+  <text class="section ink" x="70" y="795">VERIFIED WORKFLOW</text>
+  <path d="M130 828 H1465" stroke="#6f6d66" stroke-width="2"/>
+  <g>
+    <circle cx="145" cy="828" r="23" class="pink" stroke="#171714" stroke-width="1.5"/><text class="stepNo ink center" x="145" y="834">1</text><text class="small ink center" x="145" y="870">Ticket</text>
+    <circle cx="400" cy="828" r="23" class="orange" stroke="#171714" stroke-width="1.5"/><text class="stepNo ink center" x="400" y="834">2</text><text class="small ink center" x="400" y="870">Evidence</text>
+    <circle cx="655" cy="828" r="23" class="blue" stroke="#171714" stroke-width="1.5"/><text class="stepNo ink center" x="655" y="834">3</text><text class="small ink center" x="655" y="870">Execute</text>
+    <circle cx="910" cy="828" r="23" class="yellow" stroke="#171714" stroke-width="1.5"/><text class="stepNo ink center" x="910" y="834">4</text><text class="small ink center" x="910" y="870">Prove</text>
+    <circle cx="1165" cy="828" r="23" class="mint" stroke="#171714" stroke-width="1.5"/><text class="stepNo ink center" x="1165" y="834">5</text><text class="small ink center" x="1165" y="870">Approve</text>
+    <circle cx="1420" cy="828" r="23" class="lav" stroke="#171714" stroke-width="1.5"/><text class="stepNo ink center" x="1420" y="834">6</text><text class="small ink center" x="1420" y="870">Hold reply</text>
+  </g>
+</svg>

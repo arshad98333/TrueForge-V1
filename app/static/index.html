@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>Roaming Resolver | Operator Console</title>
+    <link rel="stylesheet" href="/demo-assets/styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <a class="brand" href="/demo" aria-label="Roaming Resolver home">
+          <span class="brand-mark">R</span>
+          <span>roaming resolver</span>
+        </a>
+        <div class="topbar-meta">
+          <span class="environment">SYNTHETIC TEST DATA</span>
+          <span class="runtime"><i></i> TrueForge connected · <b id="provider-label">provider loading</b></span>
+          <button class="refresh" id="refresh" type="button">Refresh trace</button>
+        </div>
+      </header>
+
+      <main class="workspace">
+        <aside class="sidebar">
+          <div class="side-label">WORKSPACE</div>
+          <nav aria-label="Primary navigation">
+            <a class="nav-item active" href="#investigation">Investigation</a>
+            <a class="nav-item" href="#evidence">Evidence</a>
+            <a class="nav-item" href="#execution">Execution</a>
+            <a class="nav-item" href="#controls">Controls</a>
+          </nav>
+
+          <div class="case-card">
+            <span class="side-label">ACTIVE CASE</span>
+            <strong id="side-issue">Waiting</strong>
+            <span id="side-title">No investigation loaded</span>
+          </div>
+
+          <div class="scope-note">
+            <span class="side-label">SCOPE</span>
+            <p>One ticket. One decision. No refund or customer delivery.</p>
+          </div>
+        </aside>
+
+        <section class="content" id="investigation">
+          <div class="hero">
+            <div>
+              <p class="eyebrow">CUSTOMER SUPPORT INVESTIGATION</p>
+              <h1>One job,<br />finished.</h1>
+              <p class="lede">Prove one disputed charge. Preserve human control.</p>
+            </div>
+            <div class="run-panel">
+              <span class="run-label">RUN STATUS</span>
+              <strong id="run-status">Loading</strong>
+              <code id="run-id">Connecting to local runtime</code>
+              <button class="run-action" id="run-workflow" type="button">Run workflow</button>
+              <span class="run-feedback" id="run-feedback" aria-live="polite"></span>
+            </div>
+          </div>
+
+          <section class="queue-section" aria-labelledby="queue-title">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">LINEAR OPERATIONS</p>
+                <h2 id="queue-title">Open ticket queue</h2>
+              </div>
+              <div class="queue-actions">
+                <button class="secondary-action" id="show-tickets" type="button">Show all open</button>
+                <button class="run-action compact" id="generate-run" type="button">Generate random case + run</button>
+              </div>
+            </div>
+            <p class="queue-note" id="queue-feedback" aria-live="polite">Only synthetic, scope-marked tickets can be sent to the agent harness.</p>
+            <div class="ticket-list" id="ticket-list"></div>
+
+            <div class="tool-flow" aria-label="Agent harness tool path">
+              <span>Linear ticket</span><b>→</b><span>MongoDB evidence</span><b>→</b>
+              <span>TrueForge agent</span><b>→</b><span>E2B execution</span><b>→</b>
+              <span>Human approval</span>
+            </div>
+
+            <details class="edge-panel">
+              <summary>Hackathon edge-case matrix</summary>
+              <div class="edge-grid" id="edge-grid"></div>
+            </details>
+          </section>
+
+          <section class="stage-section" aria-labelledby="stage-title">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">LIVE AGENT LOOP</p>
+                <h2 id="stage-title">Execution stages</h2>
+              </div>
+              <div class="legend" aria-label="Stage status legend">
+                <span><i class="complete-dot"></i>Complete</span>
+                <span><i class="current-dot"></i>Current</span>
+                <span><i class="waiting-dot"></i>Waiting</span>
+              </div>
+            </div>
+            <div class="stage-grid" id="stage-grid" aria-live="polite"></div>
+          </section>
+
+          <section class="evidence-section" id="evidence">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">BOUND EVIDENCE</p>
+                <h2>Decision record</h2>
+              </div>
+              <code class="hash" id="evidence-hash">No evidence hash</code>
+            </div>
+
+            <div class="decision-grid">
+              <article class="amount-card billed">
+                <span>BILLED</span>
+                <strong id="billed">INR 0.00</strong>
+              </article>
+              <article class="amount-card expected">
+                <span>RECONSTRUCTED</span>
+                <strong id="expected">INR 0.00</strong>
+              </article>
+              <article class="amount-card correction">
+                <span>DIFFERENCE</span>
+                <strong id="difference">INR 0.00</strong>
+              </article>
+            </div>
+
+            <div class="detail-grid">
+              <article class="detail-card" id="execution">
+                <div class="card-heading">
+                  <span class="index">A</span>
+                  <div>
+                    <p class="eyebrow">TRUEFORGE TRACE</p>
+                    <h3>Execution proof</h3>
+                  </div>
+                </div>
+                <dl class="facts">
+                  <div><dt>Session</dt><dd id="session-id">Not started</dd></div>
+                  <div><dt>Sandbox</dt><dd id="sandbox-id">Not provisioned</dd></div>
+                  <div><dt>Native exec calls</dt><dd id="exec-count">0</dd></div>
+                  <div><dt>Turn state</dt><dd id="turn-status">Not started</dd></div>
+                </dl>
+              </article>
+
+              <article class="detail-card audit-card">
+                <div class="card-heading">
+                  <span class="index">B</span>
+                  <div>
+                    <p class="eyebrow">AUDIT TRAIL</p>
+                    <h3>Last verified events</h3>
+                  </div>
+                </div>
+                <ol class="audit-list" id="audit-list">
+                  <li><span>Waiting for the first event</span><time>Pending</time></li>
+                </ol>
+              </article>
+            </div>
+          </section>
+        </section>
+
+        <aside class="proof-rail" id="controls">
+          <p class="eyebrow">JUDGE PROOF</p>
+          <h2>Three claims.<br />Visible evidence.</h2>
+
+          <div class="proof-list">
+            <article class="proof proof-one">
+              <span class="proof-number">01</span>
+              <div>
+                <h3>Reaches real systems</h3>
+                <p>Linear issue plus scoped Atlas evidence.</p>
+                <strong id="proof-real">WAITING</strong>
+              </div>
+            </article>
+            <article class="proof proof-two">
+              <span class="proof-number">02</span>
+              <div>
+                <h3>Runs what it writes</h3>
+                <p>One immutable command in a traced E2B sandbox.</p>
+                <strong id="proof-code">WAITING</strong>
+              </div>
+            </article>
+            <article class="proof proof-three">
+              <span class="proof-number">03</span>
+              <div>
+                <h3>Knows when to stop</h3>
+                <p>Approval before impact. Customer reply remains unsent.</p>
+                <strong id="proof-stop">WAITING</strong>
+              </div>
+            </article>
+          </div>
+
+          <div class="boundary-card">
+            <span class="side-label">IMPACT BOUNDARY</span>
+            <div class="boundary-row"><span>Refund issued</span><strong>NO</strong></div>
+            <div class="boundary-row"><span>Billing changed</span><strong>NO</strong></div>
+            <div class="boundary-row"><span>Customer contacted</span><strong>NO</strong></div>
+          </div>
+
+          <a class="trueforge-link" id="trueforge-link" href="http://127.0.0.1:8790" target="_blank" rel="noreferrer">
+            Inspect in TrueForge
+            <span>Open session trace</span>
+          </a>
+        </aside>
+      </main>
+
+      <footer>
+        <span>TRUEFORGE AGENT HARNESS</span>
+        <span>LINEAR</span>
+        <span>MONGODB ATLAS</span>
+        <span>E2B SANDBOX</span>
+      </footer>
+    </div>
+    <script src="/demo-assets/demo.js?v=3" defer></script>
+  </body>
+</html>
