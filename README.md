@@ -2,6 +2,8 @@
 
 Roaming Charge Resolver is a synthetic support agent that reads Linear and MongoDB, runs its calculation in E2B through TrueForge, and stops for human approval before posting a correction.
 
+Live demo: [truefoundry.arshadify.online](https://truefoundry.arshadify.online/)
+
 Video demo: [Watch the 3-minute TrueForge walkthrough on Loom](https://www.loom.com/share/6747053ab20b4603bb0e9b5ef90bb85e)
 
 Demo narration: [three-minute-hackathon-demo-script.md](Instructions/three-minute-hackathon-demo-script.md)
